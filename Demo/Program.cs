@@ -66,7 +66,7 @@ namespace Demo
             }
 
 
-            return "Balanced";
+            return stack.Count==0? "Balanced" : "Not Balanced";
         }
 
 
@@ -98,7 +98,9 @@ namespace Demo
             #endregion
 
             #region Q2).	Given a Stack, implement a function to check if a string of parentheses is balanced using a stack.
-            Console.WriteLine(IsBalanced("[()]{}"));
+            Console.WriteLine(IsBalanced("[()]{ }"));
+            Console.WriteLine(IsBalanced("(5+5"));
+            Console.WriteLine(IsBalanced("5+5)"));
             #endregion
         }
     }
